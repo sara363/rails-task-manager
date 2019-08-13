@@ -1,0 +1,14 @@
+<h1>NEW TASKS</h1>
+
+<%= form_for @task do |task| %>
+
+  <%= task.text_field :title %>
+
+  <%= task.text_field :details %>
+
+  <%= task.text_field :completed %>
+
+  <%= task.submit %>
+<%end%>
+
+<%= link_to "Come back to tasks", tasks_path %>
